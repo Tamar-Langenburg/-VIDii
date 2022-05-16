@@ -1,0 +1,170 @@
+/* CSS Document */
+*, *::after, *::before {
+  box-sizing:border-box;  
+}
+
+html, body {
+  height:100%;
+  margin:0;
+}
+
+button:not([disabled]) {
+  cursor:pointer;
+}
+
+ol {
+  height: 100vh;
+  display: flex;
+  margin: 0em;
+  padding: 0em;
+  list-style-type: none;
+}
+
+li{
+  display:grid;
+	place-items:center;
+	flex-grow:1;
+	flex-basis:0%;
+	transition:1s;
+}
+
+div{
+  width: 2em;
+  height: 4em;
+  background-color: white;
+  border: 2px black;
+  float: center;
+  position: relative;
+}
+
+li:hover {
+	flex-basis:60%;
+}
+
+p {
+  width: 50%;
+  height: 20%;
+  font-family: pixeled;
+  background-color: rgb(255, 255, 255);
+  border-style: double;
+  border-width: 1em;
+  font-size:0.5em;
+  padding:1em;
+  margin:0.5em;
+  position: absolute;
+  top: 5%;
+  left: 5%;
+  overflow: hidden;
+  opacity: 0;
+}
+li:hover p{
+  opacity: 1;
+}
+/* pokemon gif yellow green red */
+li:nth-of-type(1) img{
+  width: 12em;
+  height: auto;
+  position:absolute; 
+}
+/* pokemon gif gold */
+li:nth-of-type(2) img{
+  width: 16em;
+  height: auto;
+  position:absolute; 
+  transform: scaleX(-1);
+}
+/* pokemon gif emerald */
+li:nth-of-type(3) img{
+  width: 7em;
+  height: auto;
+  position:absolute; 
+  transform: scaleX(-1);
+}
+/* pokemon gif diamond */
+li:nth-of-type(4) img{
+  width: 7em;
+  position:absolute; 
+}
+/* pokemon yellow green red */
+
+li:nth-of-type(1){
+  width: 100%;
+  position:relative;
+  background-image: url("../images/red green.png");
+  background-size: 80vw 80vw;
+  background-position: center;
+
+  animation-name: slideRed;
+  animation-duration: 10s;
+  animation-iteration-count: infinite;
+  animation-timing-function:linear;
+}
+
+/* pokemon gold */
+
+li:nth-of-type(2) {
+  width: 100%;
+  position:relative;
+  background-image: url("../images/yellow.png");
+  background-size: 130vw 130vw;
+  background-position: center;
+
+  animation-name: slideGold;
+  animation-duration: 10s;
+  animation-iteration-count: infinite;
+  animation-timing-function:linear;
+}
+
+/* pokemon emerald */
+
+li:nth-of-type(3) {
+  width: 100%;
+  height: 100%;
+  position:relative;
+  background-image: url("../images/emeraldachterdaycare.png");
+  background-size: 190vw 70vw;
+  background-position: center;
+
+  animation-name: slideEmerald;
+  animation-duration: 10s;
+  animation-iteration-count: infinite;
+  animation-timing-function:linear;
+} 
+
+/* pokemon diamond */
+li:nth-of-type(4) {
+  width: 100%;
+  position:relative;
+  background-image: url("../images/diamondtwinleaf.png");
+  background-size: 110vw 110vw;
+  background-position: center;
+  animation-name: slideDiamond;
+  animation-duration: 10s;
+  animation-iteration-count: infinite;
+  animation-timing-function:linear;
+  
+
+}
+
+@keyframes slideDiamond {
+  0% {background-position: 45% 0%;}
+  100% {background-position: 45% 50%;}
+}
+
+@keyframes slideEmerald {
+  0% {background-position: 0% 25%;}
+  100%{background-position: 50% 25%;}
+}
+
+@keyframes slideGold {
+  0% {background-position: 10% 60%;}
+  100%{background-position: 65% 60%;}
+}
+
+@keyframes slideRed {
+  0% {background-position: 0% 10%;}
+  100%{background-position: 70% 10%;}
+}
+
+
+/* */
