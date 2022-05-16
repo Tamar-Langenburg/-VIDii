@@ -8,6 +8,12 @@ html, body {
   margin:0;
 }
 
+:root{
+  --kleur-tekstvak:rgb(255, 255, 255);
+  --kleur-achtergronddiv:rgb(255, 255, 255);
+  --kleur-tekst:rgb(0, 0, 0);
+}
+
 button:not([disabled]) {
   cursor:pointer;
 }
@@ -31,7 +37,7 @@ li{
 div{
   width: 2em;
   height: 4em;
-  background-color: white;
+  background-color:var(--kleur-achtergronddiv);
   border: 2px black;
   float: center;
   position: relative;
@@ -42,10 +48,11 @@ li:hover {
 }
 
 p {
+  background-color:var(--kleur-tekstvak);
   width: 50%;
   height: 20%;
-  font-family: pixeled;
-  background-color: rgb(255, 255, 255);
+  font-family: pixeled, Roboto, ;
+  
   border-style: double;
   border-width: 1em;
   font-size:0.5em;
@@ -57,6 +64,7 @@ p {
   overflow: hidden;
   opacity: 0;
 }
+
 li:hover p{
   opacity: 1;
 }
@@ -132,18 +140,18 @@ li:nth-of-type(3) {
 } 
 
 /* pokemon diamond */
+
 li:nth-of-type(4) {
   width: 100%;
   position:relative;
   background-image: url("../images/diamondtwinleaf.png");
   background-size: 110vw 110vw;
   background-position: center;
+
   animation-name: slideDiamond;
   animation-duration: 10s;
   animation-iteration-count: infinite;
   animation-timing-function:linear;
-  
-
 }
 
 @keyframes slideDiamond {
@@ -165,6 +173,5 @@ li:nth-of-type(4) {
   0% {background-position: 0% 10%;}
   100%{background-position: 70% 10%;}
 }
-
 
 /* */
