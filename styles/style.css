@@ -1,12 +1,10 @@
 /* CSS Document */
+
 *, *::after, *::before {
   box-sizing:border-box;  
 }
 
-html, body {
-  height:100%;
-  margin:0;
-}
+/* Custom properties */
 
 :root{
   --kleur-tekstvak:rgb(255, 255, 255);
@@ -14,16 +12,23 @@ html, body {
   --kleur-tekst:rgb(0, 0, 0);
 }
 
+/* Algemene opmaak*/
+
+html, body {
+  height:100%;
+  margin:0;
+}
+
 button:not([disabled]) {
   cursor:pointer;
 }
 
 ol {
-  height: 100vh;
-  display: flex;
+  height:100vh;
+  display:flex;
   margin: 0em;
   padding: 0em;
-  list-style-type: none;
+  list-style-type:none;
 }
 
 li{
@@ -31,16 +36,17 @@ li{
 	place-items:center;
 	flex-grow:1;
 	flex-basis:0%;
-	transition:1s;
+  transition:1s;
+  overflow:hidden;
 }
 
 div{
-  width: 2em;
-  height: 4em;
+  width:2em;
+  height:4em;
   background-color:var(--kleur-achtergronddiv);
-  border: 2px black;
-  float: center;
-  position: relative;
+  border:2px black;
+  float:center;
+  position:relative;
 }
 
 li:hover {
@@ -49,110 +55,120 @@ li:hover {
 
 p {
   background-color:var(--kleur-tekstvak);
-  width: 50%;
-  height: 20%;
-  font-family: pixeled, Roboto, ;
+  width:50%;
+  height:20%;
+  font-family:pixeled, Roboto;
   
-  border-style: double;
-  border-width: 1em;
+  border-style:double;
+  border-width:1em;
   font-size:0.5em;
   padding:1em;
   margin:0.5em;
-  position: absolute;
-  top: 5%;
-  left: 5%;
-  overflow: hidden;
-  opacity: 0;
+  position:absolute;
+  top:5%;
+  left:5%;
+  overflow:hidden;
+  opacity:0;
 }
 
 li:hover p{
-  opacity: 1;
+  opacity:1;
 }
+
+/* Opmaak van de gifs*/
 /* pokemon gif yellow green red */
+
 li:nth-of-type(1) img{
-  width: 12em;
-  height: auto;
+  width:12em;
+  height:auto;
   position:absolute; 
 }
 /* pokemon gif gold */
+
 li:nth-of-type(2) img{
-  width: 16em;
-  height: auto;
+  width:16em;
+  height:auto;
   position:absolute; 
-  transform: scaleX(-1);
+  transform:scaleX(-1);
 }
 /* pokemon gif emerald */
+
 li:nth-of-type(3) img{
-  width: 7em;
-  height: auto;
+  width:7em;
+  height:auto;
   position:absolute; 
-  transform: scaleX(-1);
+  transform:scaleX(-1);
 }
 /* pokemon gif diamond */
+
 li:nth-of-type(4) img{
-  width: 7em;
+  width:7em;
   position:absolute; 
 }
+
+/* Opmaak van de achtergronden */
 /* pokemon yellow green red */
 
-li:nth-of-type(1){
-  width: 100%;
+li:nth-of-type(1) {
+  width:100%;
   position:relative;
-  background-image: url("../images/red green.png");
-  background-size: 80vw 80vw;
-  background-position: center;
+  background-image:url("../images/red green.png");
+  background-size:80vw 80vw;
+  background-position:center;
 
-  animation-name: slideRed;
-  animation-duration: 10s;
-  animation-iteration-count: infinite;
+  animation-name:slideRed;
+  animation-duration:10s;
+  animation-iteration-count:infinite;
   animation-timing-function:linear;
 }
 
 /* pokemon gold */
 
 li:nth-of-type(2) {
-  width: 100%;
+  width:100%;
   position:relative;
-  background-image: url("../images/yellow.png");
-  background-size: 130vw 130vw;
-  background-position: center;
+  background-image:url("../images/yellow.png");
+  background-size:130vw 130vw;
+  background-position:center;
 
-  animation-name: slideGold;
-  animation-duration: 10s;
-  animation-iteration-count: infinite;
+  animation-name:slideGold;
+  animation-duration:10s;
+  animation-iteration-count:infinite;
   animation-timing-function:linear;
 }
 
 /* pokemon emerald */
 
 li:nth-of-type(3) {
-  width: 100%;
-  height: 100%;
+  width:100%;
+  height:100%;
   position:relative;
-  background-image: url("../images/emeraldachterdaycare.png");
-  background-size: 190vw 70vw;
-  background-position: center;
+  background-image:url("../images/emeraldachterdaycare.png");
+  background-size:190vw 70vw;
+  background-position:center;
 
-  animation-name: slideEmerald;
-  animation-duration: 10s;
-  animation-iteration-count: infinite;
+  animation-name:slideEmerald;
+  animation-duration:10s;
+  animation-iteration-count:infinite;
   animation-timing-function:linear;
 } 
 
 /* pokemon diamond */
 
 li:nth-of-type(4) {
-  width: 100%;
+  width:100%;
   position:relative;
-  background-image: url("../images/diamondtwinleaf.png");
-  background-size: 110vw 110vw;
+  background-image:url("../images/diamondtwinleaf.png");
+  background-size:110vw 110vw;
   background-position: center;
 
-  animation-name: slideDiamond;
-  animation-duration: 10s;
-  animation-iteration-count: infinite;
+  animation-name:slideDiamond;
+  animation-duration:10s;
+  animation-iteration-count:infinite;
   animation-timing-function:linear;
 }
+
+/* keyframe animaties */
 
 @keyframes slideDiamond {
   0% {background-position: 45% 0%;}
