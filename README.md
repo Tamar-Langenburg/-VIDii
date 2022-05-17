@@ -12,11 +12,12 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
 
 ## Jij
 
+
 ### Ontwerper:
-Sanne 't Hooft (vervangen door jouw naam)
+Tamar Langenburg
 
 #### Je startniveau:
-Mijn startniveau is: hier je startniveau (kies uit zwart, rood óf blauw)
+Mijn startniveau is blauw.
 
 
 
@@ -25,18 +26,18 @@ Mijn startniveau is: hier je startniveau (kies uit zwart, rood óf blauw)
 # Je plan
 
 <details open>
-  <summary>De eerste versie/schets van je ontwerp & je persoonlijke uitdaging</summary>
+  <summary>Dit is de eerste schets van mijn ontwerp </summary>
 
   ### De eerste versie/schets:
-  <img src="readme-images/dummy-plaatje.jpg" width="375px" alt="eerste versie/schets">
+  <img src="../readme-images/1e schets.jpg" width="375px" alt="eerste versie/schets">
 
 
   ### Je ambitie: 
   Aan deze technieken/punten wil ik werken:
-  - punt 1
-  - punt 2
-  - nog een punt
-  - ...
+  - Ik wil op de website de achtergronden laten bewegen
+  - De curser moet in een pokebal kunnen veranderen
+  - er moet een keyframes animatie in
+  - De website moet responsive zijn
  
 </details>
 
@@ -49,27 +50,21 @@ Mijn startniveau is: hier je startniveau (kies uit zwart, rood óf blauw)
   <summary>Mijn bevindingen + wijzigingen (minimaal 5)</summary>
 
   ### Bevinding 1:
-  Omschrijving van wat er nog niet orde was (tekst en afbeeding(en)).
+  Het concept is leuk, maar ik moet nog goed bedenken wat ik als content erbij ga vertellen en hoe ik de poppetjes laat lopen.
 
   #### oplossing:
-  Beschrijving hoe je het hebt hebt opgelost of als het niet gelukt is hoe je het zou oplossen (tekst en afbeeding(en)).
-
-
+  Ik ga bij elke list item een beweegende afbeeling op de achtergrond doen. En een GIF animatie voor de poppetjes gebruiken.
 
   ### Bevinding 2:
-  Omschrijving van wat er nog niet orde was (tekst en afbeeding(en)).
+  De tekst had ik nog niet en de afbeeldingen. Die moet ik nog verzamelen.
 
   #### oplossing:
-  Beschrijving hoe je het hebt hebt opgelost of als het niet gelukt is hoe je het zou oplossen (tekst en afbeeding(en)).
-
-
+  Ik heb een moment genomen om alle afbeeldingen te vinden en in het mapje images te doen.
 
   ### Bevinding 3:
-  ...
+  Tijdens het zoeken heb ik goed moeten kijken naar de kwaliteit en naar de grote van de afbeeldingen, vooral omdat er genoeg ruimte moet zijn voor het poppetje om te lopen.
 
 </details>
-
-
 
 
 ## Voortgang/Feedback 2
@@ -78,23 +73,20 @@ Mijn startniveau is: hier je startniveau (kies uit zwart, rood óf blauw)
   <summary>Mijn bevindingen + wijzigingen (minimaal 5)</summary>
   
   ### Bevinding 1:
-  Omschrijving van wat er nog niet orde was (tekst en afbeeding(en)).
+  De afbeelingen passen goed bij mijn thema, maar kunnen nog niet bewegen. Ik heb nu alleen dat de poppetjes Gif het wel doet.
 
   #### oplossing:
-  Beschrijving hoe je het hebt hebt opgelost of als het niet gelukt is hoe je het zou oplossen (tekst en afbeeding(en)).
-
-
+  Ik heb de tip gekregen om background positie te gebruiken om de achtergrond afbeeldingen te laten bewegen over het scherm, en te positioneren.
 
   ### Bevinding 2:
-  Omschrijving van wat er nog niet orde was (tekst en afbeeding(en)).
+  De Website is nog niet responsive, en ik moet nog veel doen aan de code. zoals custom properties etc.
 
   #### oplossing:
-  Beschrijving hoe je het hebt hebt opgelost of als het niet gelukt is hoe je het zou oplossen (tekst en afbeeding(en)).
-
-
+  Ik ga de responsiveness aanpassen van de achtergronden en de poppetjes image in de li overlay hidden zetten, zodat ze niet meer overlappen. 
 
   ### Bevinding 3:
-  ...
+  Ook moet ik nog een default lettertype vinden, want die deed het niet op een andere laptop.
+
 
 </details>
 
@@ -111,15 +103,11 @@ Mijn startniveau is: hier je startniveau (kies uit zwart, rood óf blauw)
   #### oplossing:
   Beschrijving hoe je het hebt hebt opgelost of als het niet gelukt is hoe je het zou oplossen (tekst en afbeeding(en)).
 
-
-
   ### Bevinding 2:
   Omschrijving van wat er nog niet orde was (tekst en afbeeding(en)).
 
   #### oplossing:
   Beschrijving hoe je het hebt hebt opgelost of als het niet gelukt is hoe je het zou oplossen (tekst en afbeeding(en)).
-
-
 
   ### Bevinding 3:
   ...
@@ -161,8 +149,11 @@ Mijn startniveau is: hier je startniveau (kies uit zwart, rood óf blauw)
 
 Nb. Wees specifiek ('css-tricks' als bron is bijv. niet specifiek genoeg).
 
-1. bron 1
-2. bron 2
-3. ...
+1. Layout horizontaal hover https://codepen.io/shooft/pen/XWZKdgM
+2. Layout tekst verdwijnen https://codepen.io/christinemoore/pen/ExvqjL
+3. stijlen van de buttons en interactief maken https://codepen.io/shooft/pen/gOvgbga?editors=1100
+4. States op de button https://codepen.io/shooft/pen/gOvgbga?editors=1100
+5. Font service via @font-face https://dlo.mijnhva.nl/content/enforced/324125-FDMCI-6000C06_21-DMCI-CMD-2122/VIDii%2021-22%20-%20VID%202%20-%20Fonts.pdf?_&d2lSessionVal=MlhGXkYzvBqZwHRleQwxxzPw8
+6. 
 
 </details>

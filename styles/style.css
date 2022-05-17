@@ -10,9 +10,20 @@
   --kleur-tekstvak:rgb(255, 255, 255);
   --kleur-achtergronddiv:rgb(255, 255, 255);
   --kleur-tekst:rgb(0, 0, 0);
+  --kleur-pokebalsection: rgb(255, 255, 255);
 }
 
-/* Algemene opmaak*/
+/* Lettertype pixeled*/
+@font-face {
+  font-family: 'pixeled';
+  src: url('../fonts/pixeled-webfont.woff2') format('woff2'),
+       url('../fonts/pixeled-webfont.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+
+}
+
+/* Algemene opmaak */
 
 html, body {
   height:100%;
@@ -26,8 +37,8 @@ button:not([disabled]) {
 ol {
   height:100vh;
   display:flex;
-  margin: 0em;
-  padding: 0em;
+  margin:0em;
+  padding:0em;
   list-style-type:none;
 }
 
@@ -40,13 +51,53 @@ li{
   overflow:hidden;
 }
 
-div{
-  width:2em;
-  height:4em;
-  background-color:var(--kleur-achtergronddiv);
-  border:2px black;
-  float:center;
+section{
+  
+  border: 3px   black solid;
+  background-color:var(--kleur-pokebalsection);
+
   position:relative;
+	width:30%;
+	
+	display:flex;
+	justify-content:center;
+  align-items:center;
+  position: absolute;
+  z-index: 1;
+  top: 80%;
+  left: 35%;
+}
+
+button{
+  padding:0%;
+  margin: 0px 10px;
+	appearance:none;
+	background:none;
+  border:none;
+  width: 30%;
+  height: auto;
+  transition:transform 1s;
+}
+
+button:hover{
+  cursor:pointer;
+  transform:scale(1.1);
+}
+
+button:focus{
+  filter:
+		drop-shadow(0 0 .25em rgb(187, 2, 2))
+		drop-shadow(0 0 .5em rgb(187, 2, 2));
+}
+
+button:active{
+  transform:perspective(3em) rotateY(180deg);
+	transition:0s;
+}
+button img{
+  display: block;
+  width:5em;
+  transition:.2s;
 }
 
 li:hover {
@@ -57,7 +108,7 @@ p {
   background-color:var(--kleur-tekstvak);
   width:50%;
   height:20%;
-  font-family:pixeled, Arial;
+  font-family:'pixeled', Arial, 'Times New Roman', Times, serif;
   
   border-style:double;
   border-width:1em;
@@ -76,7 +127,7 @@ li:hover p{
   opacity:1;
 }
 
-/* Opmaak van de gifs*/
+/* Opmaak van de gifs */
 /* pokemon gif yellow green red */
 
 li:nth-of-type(1) img{
@@ -84,6 +135,7 @@ li:nth-of-type(1) img{
   height:auto;
   position:absolute; 
 }
+
 /* pokemon gif gold */
 
 li:nth-of-type(2) img{
@@ -92,6 +144,7 @@ li:nth-of-type(2) img{
   position:absolute; 
   transform:scaleX(-1);
 }
+
 /* pokemon gif emerald */
 
 li:nth-of-type(3) img{
@@ -100,6 +153,7 @@ li:nth-of-type(3) img{
   position:absolute; 
   transform:scaleX(-1);
 }
+
 /* pokemon gif diamond */
 
 li:nth-of-type(4) img{
@@ -111,7 +165,6 @@ li:nth-of-type(4) img{
 /* pokemon yellow green red */
 
 li:nth-of-type(1) {
-  width:100%;
   position:relative;
   background-image:url("../images/red green.png");
   background-size:80vw 80vw;
@@ -126,7 +179,6 @@ li:nth-of-type(1) {
 /* pokemon gold */
 
 li:nth-of-type(2) {
-  width:100%;
   position:relative;
   background-image:url("../images/yellow.png");
   background-size:130vw 130vw;
@@ -141,8 +193,6 @@ li:nth-of-type(2) {
 /* pokemon emerald */
 
 li:nth-of-type(3) {
-  width:100%;
-  height:100%;
   position:relative;
   background-image:url("../images/emeraldachterdaycare.png");
   background-size:190vw 70vw;
@@ -157,10 +207,11 @@ li:nth-of-type(3) {
 /* pokemon diamond */
 
 li:nth-of-type(4) {
-  width:100%;
+
   position:relative;
   background-image:url("../images/diamondtwinleaf.png");
   background-size:110vw 110vw;
+
   background-position: center;
 
   animation-name:slideDiamond;
@@ -191,4 +242,13 @@ li:nth-of-type(4) {
   100%{background-position: 70% 10%;}
 }
 
+@keyframes flip {
+  0% {
+      transform: rotateY(0);
+  }
+
+  100% {
+      transform:rotateY(180deg);
+  }
+}
 /* */
