@@ -139,14 +139,14 @@ Mijn startniveau is blauw. Ik heb voor blauw gekozen omdat mijn codeer vaardighe
   <summary>Mijn eindresultaat & persoonlijke ontwikkeling</summary>
 
   ### Je uitkomst - karakteristiek screenshot(s):
-  <img src="readme-images/screenshot3.jpg" width="375px" alt="final ontwerp">
-  <img src="readme-images/screenshot4.jpg" width="375px" alt="final ontwerp">
+  <img src="readme-images/screenshot3.png" width="375px" alt="final ontwerp">
+  <img src="readme-images/screenshot4.png" width="375px" alt="final ontwerp">
 
 
   ### Dit ging goed/Heb ik geleerd: 
   Ik heb geleerd hoe de basics van coderen werken. Ik heb dingen geleerd zoals keyframe animaties, layout met grid en flex en hoe ik elementen responsive kan maken. Ook heb ik geleerd hoe ik op verschillende manieren font kan toevoegen. En ik ben in het algemeen blij dat ik al mijn ambities heb gehaald.
 
-  <img src="readme-images/screenshot2.jpg" width="375px" alt="top">
+  <img src="readme-images/screenshot 2.png" width="375px" alt="top">
 
 
   ### Dit was lastig/Is niet gelukt:
