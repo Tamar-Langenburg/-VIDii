@@ -123,19 +123,19 @@ Mijn startniveau is blauw.
   <summary>Mijn eindresultaat & persoonlijke ontwikkeling</summary>
 
   ### Je uitkomst - karakteristiek screenshot(s):
-  <img src="readme-images/dummy-plaatje.jpg" width="375px" alt="final ontwerp">
+  <img src="readme-images/screenshot1" width="375px" alt="final ontwerp">
 
 
   ### Dit ging goed/Heb ik geleerd: 
   Ik heb geleerd hoe de basics van coderen werken. Ik heb dingen geleerd zoals keyframe animaties, layout met grid en flex en hoe ik elementen responsive kan maken. Ook heb ik geleerd hoe ik op verschillende manieren font kan toevoegen. 
 
-  <img src="readme-images/dummy-plaatje.jpg" width="375px" alt="top">
+  <img src="readme-images/screenshot2" width="375px" alt="top">
 
 
   ### Dit was lastig/Is niet gelukt:
   Wat mij niet gelukt was doordat ik bij kleine dingen vast liep, zoals het responsive maken van de list items. heb ik niet meer interactie en/of animaties kunnen toevoegen. 
 
-  <img src="readme-images/dummy-plaatje.jpg" width="375px" alt="bummer">
+  
 </details>
 
 
