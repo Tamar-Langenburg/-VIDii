@@ -95,7 +95,7 @@ Mijn startniveau is blauw.
 ## Voortgang/Feedback 3
 
 <details>
-  <summary>Mijn bevindingen + wijzigingen Feedback Zara</summary>
+  <summary>Mijn bevindingen + wijzigingen feedback</summary>
   
   ### Bevinding 1:
   Mijn tekst vlakken en buttons waren nog niet helemaal responsive. Wanneer je het scherm kleiner maakt valt de tekst uit de button bijvoorbeeld.
@@ -154,6 +154,6 @@ Nb. Wees specifiek ('css-tricks' als bron is bijv. niet specifiek genoeg).
 3. stijlen van de buttons en interactief maken https://codepen.io/shooft/pen/gOvgbga?editors=1100
 4. States op de button https://codepen.io/shooft/pen/gOvgbga?editors=1100
 5. Font service via @font-face https://dlo.mijnhva.nl/content/enforced/324125-FDMCI-6000C06_21-DMCI-CMD-2122/VIDii%2021-22%20-%20VID%202%20-%20Fonts.pdf?_&d2lSessionVal=MlhGXkYzvBqZwHRleQwxxzPw8
-6. 
+6. wiggle animatie https://blog.hubspot.com/website/css-animation-examples
 
 </details>
