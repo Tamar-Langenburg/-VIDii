@@ -27,22 +27,25 @@
   font-style: normal;
 
 }
-/*********************/
+
+/********************/
 /* Algemene opmaak */
-/*********************/
+/********************/
+
 html, body {
   height:100%;
   margin:0;
   
 }
+
 /* cursur opmaak */
+
 body, button {
   cursor: url('../images/Pok-ball.png')36 38, auto;
 }
 body.masterbal, body.masterbal button {
   cursor: url('../images/masterball.png')36 38, auto;
 }
-
 body.pokebal, body.pokebal button{
   cursor: url('../images/Pok-ball.png')36 38, auto;
 }
@@ -53,6 +56,7 @@ body.hyperbal, body.hyperbal button{
   cursor: url('../images/hyberball.png') 36 38, auto;
 }
 
+/* bron opmaak ol li:  https://codepen.io/shooft/pen/XWZKdgM */
 
 ol {
   height:100vh;
@@ -74,10 +78,7 @@ li{
 section{
   border: 3px  var(--kleurborder) solid;
   background-color:var(--kleur-pokebalsection);
-
-  position:relative;
 	width:30%;
-	
 	display:flex;
 	justify-content:center;
   align-items:center;
@@ -87,7 +88,8 @@ section{
   left: 35%;
   
 }
-/* buttons van de pokebals*/
+/* buttons van de pokeballs */
+
 button{
   padding:0%;
   margin: 0px 10px;
@@ -100,7 +102,6 @@ button{
 }
 
 button:hover{
-  
   transform:scale(1.3);
 }
 
@@ -113,6 +114,10 @@ button:focus{
 button:active{
   transform:perspective(4em) rotateY(180deg);
 	transition:0s;
+}
+
+section button.active{
+  transform: scale(1.2);
 }
 
 button img{
@@ -130,16 +135,18 @@ li.open p{
 }
 
 li button{
-  position: absolute;
-  top: 60%;
   background-color: var(--kleur-button-achtergrond); 
   border: 3px solid var(--kleurborder);
   color: var(--kleur-tekst-button);
-  padding: 1em 2em;
+  position: absolute;
+  top: 60%;
+  width: 14vw;
+  height: 8vh;
+  padding: 0.4em;
   text-align: center;
   text-decoration: none;
   display: inline-block;
-  font-size: 0.6em;
+  font-size: 0.5em;
   font-family: 'pixeled', Arial, 'Times New Roman', Times, serif ;
   transition:transform 1s;
 }
@@ -153,21 +160,102 @@ p {
   width:40vw;
   height:20vh;
   font-family:'pixeled', Arial, 'Times New Roman', Times, serif;
-  
+  font-size: 0.5em;
   border-style:double;
-  border-width:1em;
-  
+  border-width:10%;
   padding:1em;
   margin:0.5em;
-  font-size:0.6vw;
   position:absolute;
   top:5%;
-  left:5%;
   overflow:hidden;
   opacity:0;
 }
-section button.active{
-  transform: scale(1.2);
+
+/***********/
+/* berries */
+/***********/
+
+/* Berry Red */
+
+img.berryRed {
+  position: absolute;
+  top: 70%;
+  left: 5%;
+  opacity: 0;
+  width: 10%;
+  height: 10%;
+  transform: scale(0.5);
+}
+
+.berryRed:hover{
+  animation: bounce 1s;
+  animation-direction: alternate;
+  animation-iteration-count: 5;
+  opacity: 1;
+  width: 10%;
+  height: auto;
+}
+/* Berry Gold */
+
+img.berryGold {
+  position: absolute;
+  top: 20%;
+  left: 5%;
+  opacity: 0;
+  width: 10%;
+  height: 10%;
+  transform: scale(0.5);
+}
+
+.berryGold:hover{
+  animation: bounce 1s;
+  animation-direction: alternate;
+  animation-iteration-count: 5;
+  opacity: 1;
+  width: 10%;
+  height: auto;
+}
+
+/* berry Emerald */
+
+img.berryEmerald {
+  position: absolute;
+  top: 70%;
+  left: 90%;
+  opacity: 0;
+  width: 10%;
+  height: 10%;
+  transform: scale(0.5);
+}
+
+.berryEmerald:hover{
+  animation: bounce 1s;
+  animation-direction: alternate;
+  animation-iteration-count: 5;
+  opacity: 1;
+  width: 10%;
+  height: auto;
+}
+
+/* berry Diamond */
+
+img.berryDiamond {
+  position: absolute;
+  top: 30%;
+  left: 5%;
+  opacity: 0;
+  width: 10%;
+  height: 10%;
+  transform: scale(0.5);
+}
+
+.berryDiamond:hover{
+  animation: bounce 1s;
+  animation-direction: alternate;
+  animation-iteration-count: 5;
+  opacity: 1;
+  width: 10%;
+  height: auto;
 }
 
 
@@ -175,7 +263,7 @@ section button.active{
 /* Opmaak van de gifs */
 /**********************/
 
-/* pokemon gif yellow green red */
+/* pokemon gif Red */
 
 li:nth-of-type(1) img{
   width:12vw;
@@ -183,7 +271,7 @@ li:nth-of-type(1) img{
   position:absolute; 
 }
 
-/* pokemon gif gold */
+/* pokemon gif Gold */
 
 li:nth-of-type(2) img{
   width:16vw;
@@ -192,7 +280,7 @@ li:nth-of-type(2) img{
   transform:scaleX(-1);
 }
 
-/* pokemon gif emerald */
+/* pokemon gif Emerald */
 
 li:nth-of-type(3) img{
   width:7vw;
@@ -201,7 +289,7 @@ li:nth-of-type(3) img{
   transform:scaleX(-1);
 }
 
-/* pokemon gif diamond */
+/* pokemon gif Diamond */
 
 li:nth-of-type(4) img{
   width:7vw;
@@ -209,7 +297,7 @@ li:nth-of-type(4) img{
 }
 /*******************************/
 /* Opmaak van de achtergronden */
-/******************************/
+/*******************************/
 
 /* pokemon yellow green red */
 
@@ -270,23 +358,57 @@ li:nth-of-type(4) {
 /***********************/
 /* keyframe animaties */
 /***********************/
-@keyframes slideDiamond {
-  0% {background-position: 45% 0%;}
-  100% {background-position: 45% 50%;}
+
+/* Animatie pokemon Red */
+
+@keyframes slideRed {
+  0% {background-position: 0% center}
+  100%{background-position: 70% center}
 }
 
-@keyframes slideEmerald {
-  0% {background-position: 0% center;}
-  100%{background-position: 50% center;}
-}
+/* Animatie pokemon Gold */
 
 @keyframes slideGold {
   0% {background-position: 10% center;}
   100%{background-position: 65% center;}
 }
 
-@keyframes slideRed {
-  0% {background-position: 0% center}
-  100%{background-position: 70% center}
+/* Animatie pokemon Emerald */
+
+@keyframes slideEmerald {
+  0% {background-position: 0% center;}
+  100%{background-position: 50% center;}
 }
+
+/* Animatie pokemon Emerald */
+
+@keyframes slideDiamond {
+  0% {background-position: 45% 0%;}
+  100% {background-position: 45% 50%;}
+}
+
+@keyframes bounce {
+  0%, 7% {
+    transform: rotateZ(0);
+  }
+  15% {
+    transform: rotateZ(-15deg);
+  }
+  20% {
+    transform: rotateZ(10deg);
+  }
+  25% {
+    transform: rotateZ(-10deg);
+  }
+  30% {
+    transform: rotateZ(6deg);
+  }
+  35% {
+    transform: rotateZ(-4deg);
+  }
+  40%, 100% {
+    transform: rotateZ(0);
+  }
+}
+
 /* */

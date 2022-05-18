@@ -49,19 +49,19 @@ Mijn startniveau is blauw.
 <details>
   <summary>Mijn bevindingen + wijzigingen. Feedback van Zara</summary>
 
-  ### Bevinding 1:
+  #### Bevinding 1:
   Het concept is leuk, maar ik moet nog goed bedenken wat ik als content erbij ga vertellen en hoe ik de poppetjes laat lopen.
 
   #### oplossing:
   Ik ga bij elke list item een beweegende afbeeling op de achtergrond doen. En een GIF animatie voor de poppetjes gebruiken.
 
-  ### Bevinding 2:
+  #### Bevinding 2:
   De tekst had ik nog niet en de afbeeldingen. Die moet ik nog verzamelen.
 
   #### oplossing:
   Ik heb een moment genomen om alle afbeeldingen te vinden en in het mapje images te doen.
 
-  ### Bevinding 3:
+  #### Bevinding 3:
   Tijdens het zoeken heb ik goed moeten kijken naar de kwaliteit en naar de grote van de afbeeldingen, vooral omdat er genoeg ruimte moet zijn voor het poppetje om te lopen.
 
 </details>
@@ -95,19 +95,19 @@ Mijn startniveau is blauw.
 ## Voortgang/Feedback 3
 
 <details>
-  <summary>Mijn bevindingen + wijzigingen (minimaal 5)</summary>
+  <summary>Mijn bevindingen + wijzigingen Feedback Zara</summary>
   
   ### Bevinding 1:
-  Omschrijving van wat er nog niet orde was (tekst en afbeeding(en)).
+  Mijn tekst vlakken en buttons waren nog niet helemaal responsive. Wanneer je het scherm kleiner maakt valt de tekst uit de button bijvoorbeeld.
 
   #### oplossing:
-  Beschrijving hoe je het hebt hebt opgelost of als het niet gelukt is hoe je het zou oplossen (tekst en afbeeding(en)).
+  Ik heb de tekst vlak aangepast en gezorgd dat de tekst in het vlak past. Dit heb ik gedaan met vw en vh. 
 
   ### Bevinding 2:
-  Omschrijving van wat er nog niet orde was (tekst en afbeeding(en)).
+  Wanneer iemand de link op github klikt, ziet hij/zij nog niet het goede lettertype. 
 
   #### oplossing:
-  Beschrijving hoe je het hebt hebt opgelost of als het niet gelukt is hoe je het zou oplossen (tekst en afbeeding(en)).
+  Dit heb ik opgelost door de font via font-face kunnen toevoegen in mijn code en nu kan je ook op andere laptops de goede font zien.
 
   ### Bevinding 3:
   ...
