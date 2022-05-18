@@ -17,7 +17,7 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
 Tamar Langenburg
 
 #### Je startniveau:
-Mijn startniveau is blauw.
+Mijn startniveau is blauw. Ik heb voor blauw gekozen omdat mijn codeer vaardigheden helemaal weg gezakt zijn, en ik uit ervaring weet dat ik vaak zal vast lopen. 
 
 
 
@@ -29,7 +29,14 @@ Mijn startniveau is blauw.
   <summary>Dit is de eerste schets van mijn ontwerp </summary>
 
   ### De eerste versie/schets:
+  Voor mijn eerste schets heb ik als idee om de verschillende stijlen van de pokemon games naast elkaar te laten staan en wanneer je meer informatie wil hebben over een spel, je op een list item kan klikken en er dan een tekstvak komt te staan. Ik wil hier een loop animatie voor de poppetjes gebruiken. 
+
   <img src="readme-images/1e schets.jpg" width="375px" alt="eerste versie/schets">
+
+  ### De tweede versie/schets:
+  Na mijn idee besproken te hebben, wilde ik nog een paar extra dingen toevoegen. zoals de optie om je cursor naar verschillende pokeballen te veranderen. En items waar je op kan klikken en je daar ook nog informatie over te zien krijgt.
+
+  <img src="readme-images/2e schets.jpg" width="375px" alt="eerste versie/schets">
 
 
   ### Je ambitie: 
@@ -95,13 +102,13 @@ Mijn startniveau is blauw.
 ## Voortgang/Feedback 3
 
 <details>
-  <summary>Mijn bevindingen + wijzigingen feedback</summary>
+  <summary>Mijn bevindingen + wijzigingen feedback van Marleen</summary>
   
   ### Bevinding 1:
-  Mijn tekst vlakken en buttons waren nog niet helemaal responsive. Wanneer je het scherm kleiner maakt valt de tekst uit de button bijvoorbeeld.
+  De button van de Pokemon Gold is niet goed klikbaar. en de animaite van de hover state duurt te lang waardoor de je de button klikt en het te lang duurt tot hij in de active state gaat. 
 
   #### oplossing:
-  Ik heb de tekst vlak aangepast en gezorgd dat de tekst in het vlak past. Dit heb ik gedaan met vw en vh. 
+  Ik heb de transition van de hover korter gemaakt en dat doet het nu goed. Ook heb ik het klikbaarheid van de pokemon Gold button opgelost door de button iets lager te zetten.
 
   ### Bevinding 2:
   Wanneer iemand de link op github klikt, ziet hij/zij nog niet het goede lettertype. 
@@ -109,8 +116,11 @@ Mijn startniveau is blauw.
   #### oplossing:
   Dit heb ik opgelost door de font via font-face kunnen toevoegen in mijn code en nu kan je ook op andere laptops de goede font zien.
 
-  ### Bevinding 3:
-  ...
+  #### bevinding 3:
+  Marleen had laten zien hoe je een fav icon kan gebruiken waardoor je een icoontje voor je website link kan doen. Dit wil ik ook nog toevoegen aan mijn ontwerp.
+
+  #### oplossing: 
+  Ik heb op gezocht hoe je een favicoon in je html doet. En nu heb ik een pokebal als icoon.
 
 </details>
 
@@ -127,13 +137,13 @@ Mijn startniveau is blauw.
 
 
   ### Dit ging goed/Heb ik geleerd: 
-  Ik heb geleerd hoe de basics van coderen werken. Ik heb dingen geleerd zoals keyframe animaties, layout met grid en flex en hoe ik elementen responsive kan maken. Ook heb ik geleerd hoe ik op verschillende manieren font kan toevoegen. 
+  Ik heb geleerd hoe de basics van coderen werken. Ik heb dingen geleerd zoals keyframe animaties, layout met grid en flex en hoe ik elementen responsive kan maken. Ook heb ik geleerd hoe ik op verschillende manieren font kan toevoegen. En ik ben in het algemeen blij dat ik al mijn ambities heb gehaald.
 
   <img src="readme-images/screenshot2.png" width="375px" alt="top">
 
 
   ### Dit was lastig/Is niet gelukt:
-  Wat mij niet gelukt was doordat ik bij kleine dingen vast liep, zoals het responsive maken van de list items. heb ik niet meer interactie en/of animaties kunnen toevoegen. 
+  Wat mij niet gelukt was doordat ik bij kleine dingen vast liep, zoals het responsive maken van de list items. heb ik niet meer interactie en/of animaties kunnen toevoegen. En het is mij niet gelukt om precies het ontwerp na te maken van mijn schets. De basis dingen heb ik wel na kunnen maken.
 
   
 </details>
@@ -145,15 +155,17 @@ Mijn startniveau is blauw.
 ## Bronnenlijst
 
 <details open>
-<summary>continu bijhouden terwijl je werkt</summary>
 
-Nb. Wees specifiek ('css-tricks' als bron is bijv. niet specifiek genoeg).
+
 
 1. Layout horizontaal hover https://codepen.io/shooft/pen/XWZKdgM
 2. Layout tekst verdwijnen https://codepen.io/christinemoore/pen/ExvqjL
 3. stijlen van de buttons en interactief maken https://codepen.io/shooft/pen/gOvgbga?editors=1100
 4. States op de button https://codepen.io/shooft/pen/gOvgbga?editors=1100
 5. Font service via @font-face https://dlo.mijnhva.nl/content/enforced/324125-FDMCI-6000C06_21-DMCI-CMD-2122/VIDii%2021-22%20-%20VID%202%20-%20Fonts.pdf?_&d2lSessionVal=MlhGXkYzvBqZwHRleQwxxzPw8
-6. wiggle animatie https://blog.hubspot.com/website/css-animation-examples
+6. Schud animatie voor de berries https://blog.hubspot.com/website/css-animation-examples
+7. Achtergrond laten bewegen met background position https://developer.mozilla.org/en-US/docs/Web/CSS/background-position
+8. icoon voor in de browser https://www.w3schools.com/html/html_favicon.asp
+
 
 </details>

@@ -19,13 +19,13 @@
 /* Lettertype pixeled*/
 /*********************/
 
+/* Hier heb ik de font geconverteerd via font squirrel, bron: https://dlo.mijnhva.nl/content/enforced/324125-FDMCI-6000C06_21-DMCI-CMD-2122/*/
 @font-face {
   font-family: 'pixeled';
   src: url('../fonts/pixeled-webfont.woff2') format('woff2'),
        url('../fonts/pixeled-webfont.woff') format('woff');
   font-weight: normal;
   font-style: normal;
-
 }
 
 /********************/
@@ -35,14 +35,17 @@
 html, body {
   height:100%;
   margin:0;
-  
 }
 
 /* cursur opmaak */
+/* bron Sanne */
 
+/* Hier krijgt de cursor een begin afbeelding */
 body, button {
   cursor: url('../images/Pok-ball.png')36 38, auto;
 }
+/* Hier verandert de afbeelding naar de afbeelding van de masterball,
+ en wordt de coordinatie van de cursor aangepast zodat je klikt met het midden van de cursor*/
 body.masterbal, body.masterbal button {
   cursor: url('../images/masterball.png')36 38, auto;
 }
@@ -98,11 +101,11 @@ button{
   border:none;
   width: 30%;
   height: auto;
-  transition:transform 1s;
+  transition:transform 0.5s;
 }
 
 button:hover{
-  transform:scale(1.3);
+  transform:scale(1.2);
 }
 
 button:focus{
@@ -139,7 +142,7 @@ li button{
   border: 3px solid var(--kleurborder);
   color: var(--kleur-tekst-button);
   position: absolute;
-  top: 60%;
+  top: 65%;
   width: 14vw;
   height: 8vh;
   padding: 0.4em;
@@ -162,7 +165,7 @@ p {
   font-family:'pixeled', Arial, 'Times New Roman', Times, serif;
   font-size: 0.5em;
   border-style:double;
-  border-width:10%;
+  border-width:0.7em;
   padding:1em;
   margin:0.5em;
   position:absolute;
@@ -171,9 +174,9 @@ p {
   opacity:0;
 }
 
-/***********/
-/* berries */
-/***********/
+/***********************/
+/* Easter eggs berries */
+/***********************/
 
 /* Berry Red */
 
@@ -188,7 +191,7 @@ img.berryRed {
 }
 
 .berryRed:hover{
-  animation: bounce 1s;
+  animation: schud 1s;
   animation-direction: alternate;
   animation-iteration-count: 5;
   opacity: 1;
@@ -208,7 +211,7 @@ img.berryGold {
 }
 
 .berryGold:hover{
-  animation: bounce 1s;
+  animation: schud 1s;
   animation-direction: alternate;
   animation-iteration-count: 5;
   opacity: 1;
@@ -220,7 +223,7 @@ img.berryGold {
 
 img.berryEmerald {
   position: absolute;
-  top: 70%;
+  top: 60%;
   left: 90%;
   opacity: 0;
   width: 10%;
@@ -229,7 +232,7 @@ img.berryEmerald {
 }
 
 .berryEmerald:hover{
-  animation: bounce 1s;
+  animation: schud 1s;
   animation-direction: alternate;
   animation-iteration-count: 5;
   opacity: 1;
@@ -250,14 +253,13 @@ img.berryDiamond {
 }
 
 .berryDiamond:hover{
-  animation: bounce 1s;
+  animation: schud 1s;
   animation-direction: alternate;
   animation-iteration-count: 5;
   opacity: 1;
   width: 10%;
   height: auto;
 }
-
 
 /**********************/
 /* Opmaak van de gifs */
@@ -331,8 +333,8 @@ li:nth-of-type(2) {
 
 li:nth-of-type(3) {
   position:relative;
-  background-image:url("../images/emeraldachterdaycare.png");
-  background-size:190vw 70vw;
+  background-image:url("../images/emerald 3.png");
+  background-size:90vw 90vw;
   background-position:center;
 
   animation-name:slideEmerald;
@@ -359,6 +361,7 @@ li:nth-of-type(4) {
 /* keyframe animaties */
 /***********************/
 
+/* Achtergrond laten bewegen, bron: https://developer.mozilla.org/en-US/docs/Web/CSS/background-position */ 
 /* Animatie pokemon Red */
 
 @keyframes slideRed {
@@ -377,7 +380,7 @@ li:nth-of-type(4) {
 
 @keyframes slideEmerald {
   0% {background-position: 0% center;}
-  100%{background-position: 50% center;}
+  100%{background-position: 80% center;}
 }
 
 /* Animatie pokemon Emerald */
@@ -386,8 +389,9 @@ li:nth-of-type(4) {
   0% {background-position: 45% 0%;}
   100% {background-position: 45% 50%;}
 }
+/* schud animatie voor de berries, bron: https://blog.hubspot.com/website/css-animation-examples */
 
-@keyframes bounce {
+@keyframes schud {
   0%, 7% {
     transform: rotateZ(0);
   }
