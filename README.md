@@ -47,7 +47,7 @@ Mijn startniveau is blauw.
 ## Voortgang/Feedback 1
 
 <details>
-  <summary>Mijn bevindingen + wijzigingen (minimaal 5)</summary>
+  <summary>Mijn bevindingen + wijzigingen. Feedback van Zara</summary>
 
   ### Bevinding 1:
   Het concept is leuk, maar ik moet nog goed bedenken wat ik als content erbij ga vertellen en hoe ik de poppetjes laat lopen.
@@ -70,7 +70,7 @@ Mijn startniveau is blauw.
 ## Voortgang/Feedback 2
 
 <details>
-  <summary>Mijn bevindingen + wijzigingen (minimaal 5)</summary>
+  <summary>Mijn bevindingen + wijzigingen. Feedback van Ellen</summary>
   
   ### Bevinding 1:
   De afbeelingen passen goed bij mijn thema, maar kunnen nog niet bewegen. Ik heb nu alleen dat de poppetjes Gif het wel doet.
@@ -127,13 +127,13 @@ Mijn startniveau is blauw.
 
 
   ### Dit ging goed/Heb ik geleerd: 
-  Korte omschrijving met plaatje(s)
+  Ik heb geleerd hoe de basics van coderen werken. Ik heb dingen geleerd zoals keyframe animaties, layout met grid en flex en hoe ik elementen responsive kan maken. Ook heb ik geleerd hoe ik op verschillende manieren font kan toevoegen. 
 
   <img src="readme-images/dummy-plaatje.jpg" width="375px" alt="top">
 
 
   ### Dit was lastig/Is niet gelukt:
-  Korte omschrijving met plaatje(s)
+  Wat mij niet gelukt was doordat ik bij kleine dingen vast liep, zoals het responsive maken van de list items. heb ik niet meer interactie en/of animaties kunnen toevoegen. 
 
   <img src="readme-images/dummy-plaatje.jpg" width="375px" alt="bummer">
 </details>
