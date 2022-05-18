@@ -29,7 +29,7 @@ Mijn startniveau is blauw.
   <summary>Dit is de eerste schets van mijn ontwerp </summary>
 
   ### De eerste versie/schets:
-  <img src="../readme-images/1e schets.jpg" width="375px" alt="eerste versie/schets">
+  <img src="readme-images/1e schets.jpg" width="375px" alt="eerste versie/schets">
 
 
   ### Je ambitie: 
